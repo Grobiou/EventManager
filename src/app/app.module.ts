@@ -14,9 +14,11 @@ import { ProfileProvider } from '../providers/profile/profile';
 class CameraMock extends Camera {
     getPicture(options) {
         return new Promise((resolve, reject) => {
-            resolve(`TWFuIGlzIGRpc3Rpbmd1aXNoZWQsIG5vdCBvbmx5IGJ5IGhpcyByZWFzb24sIGJ1dCBieSB0aGlzIHNpbmd1bGFyIHBhc3Npb24gZnJvbSBvdGhlciBhbmltYWxzLCB}`);
+            resolve(`TWFuIGlzIGRpc3Rpbmd1aXNoZWQsIG5vdCBvbmx5IGJ5IGhpcyByZWFzb24sIGJ1dCBieSB0aGlzIHNpbmd1bGFyIHBhc3Npb24gZnJvbSBvdGhlciBhbmltYWxzLCB`);
+        });
     }
 }
+
 
 @NgModule({
     declarations: [
@@ -42,4 +44,5 @@ class CameraMock extends Camera {
         { provide: Camera, useClass: CameraMock }
     ]
 })
+
 export class AppModule { }
