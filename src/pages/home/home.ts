@@ -11,7 +11,7 @@ export class HomePage {
 
     }
 
-    goToProfie() {
+    goToProfile() {
       this.navCtrl.push('profile')
     }
 
