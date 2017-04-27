@@ -1,12 +1,20 @@
 ﻿<ion-header>
 
-  <ion-navbar>
-    <ion-title>EventDetail</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Event Detail</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-card>
+    <ion-card-header>
+      {{currentEvent?.name}}
+    </ion-card-header>
+    <ion-card-content>
+      <p>Ticket: <strong>${{currentEvent?.price}}</strong></p>
+      <p>Date: <strong>{{currentEvent?.date}}</strong></p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
