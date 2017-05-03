@@ -41,7 +41,7 @@ class CameraMock extends Camera {
         AuthProvider,
         EventProvider,
         ProfileProvider,
-        { provide: Camera, useClass: CameraMock }
+        { provide: Camera, useClass: Camera }
     ]
 })
 
